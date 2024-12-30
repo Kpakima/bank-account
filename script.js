@@ -23,9 +23,7 @@ depositBtnEl.addEventListener('click', function () {
 
 //2. Implementing the withdraw
 withdrawBtnEl.addEventListener('click', function () {
-  let widthdrawAmount = Number(
-    document.querySelector('.withdraw-amount').value
-  );
+  let widthdrawAmount = Number(document.querySelector('.withdraw-amount').value);
 
   if (!widthdrawAmount) {
     alert('Enter a positive amount');
@@ -44,7 +42,5 @@ exitBtnEl.addEventListener('click', function () {
     (document.querySelector('.deposit-amount').value = '')
   );
 
-  widthdrawAmount = Number(
-    (document.querySelector('.withdraw-amount').value = '')
-  );
+  widthdrawAmount = Number(document.querySelector('.withdraw-amount').value = '');
 });
