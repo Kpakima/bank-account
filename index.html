@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="primary-heading">Bank Account</h1>
+      <section class="transaction-container">
+        <div class="balance-container">
+          <p class="account-balance">
+            Account Balance: $<span class="balance">2038</span>
+          </p>
+        </div>
+        <div class="deposit-container">
+          <button class="btn deposit-btn" type="submit">Deposit</button>
+          <input
+            class="deposit-amount input"
+            type="text"
+            name="deposit-amount"
+            id="deposit-amount"
+            placeholder="Deposit Amount"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="withdraw-container">
+          <button class="btn withdraw-btn" type="button">Withdraw</button>
+          <input
+            class="withdraw-amount input"
+            type="text"
+            name="withdraw-amount"
+            id="withdraw-amount"
+            placeholder="withdrawal Amount"
+            autocomplete="off"
+          />
+        </div>
+        <button type="button" class="btn exit-btn">Exit Transaction</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

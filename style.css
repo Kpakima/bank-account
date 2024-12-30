@@ -1,0 +1,104 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  line-height: 1;
+  overflow-x: hidden;
+  background: #cacaca;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.primary-heading {
+  font-size: 5.2rem;
+  line-height: 1;
+  color: #333;
+  margin-bottom: 4.8rem;
+}
+
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-balance {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.05;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.deposit-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.withdraw-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  background: #333;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+  background: #000;
+}
+
+.input {
+  padding: 1.2rem 2.4rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+}
+.input:focus {
+  outline: 1px solid #333;
+}
+
+.cancel-btn {
+  align-self: center;
+}
+
+@media (max-width: 48rem) {
+  html {
+    font-size: 50%;
+  }
+  main {
+    padding: 0rem 3.2rem;
+    width: 100%;
+  }
+}
